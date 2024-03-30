@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/pngwing.com.png";
+import image from "../images/WhatsApp Image 2023-12-27 at 2.21.49 PM.jpeg";
 
 const IntroSection = () => {
   const url =
@@ -9,28 +9,31 @@ const IntroSection = () => {
     <>
       <section>
         <div
-          className="w-full min-h-[60vh] sm:min-h-[80vh] bg-cover bg-center bg-fixed bg-red-300 flex items-center justify-center sm:grid  sm:grid-cols-2"
+          className="w-full min-h-[60vh] sm:min-h-[80vh] bg-cover bg-center bg-fixed bg-red-300  p-3 grid  sm:grid-cols-2"
           style={{
             backgroundImage: `linear-gradient(7deg, rgba(41,52,80,0.2) 0%, rgba(0,0,0,0.7) 32%), url(${url})`,
           }}
         >
-          <div className=" flex flex-col items-center justify-center text-white   p-3">
-            <div className="flex w-full lg:w-2/3 flex-col gap-3 ">
+          <div className=" flex flex-col  items-center justify-center text-white    p-3">
+            <div className="flex w-full lg:w-2/3 flex-col gap-3 text-center sm:text-start  ">
               <h1 className="font-bold text-4xl sm:text-5xl">
-                Mohit <span className="text-red-600">Sharma</span>
+                Mohit <span className="text-blue-600">Sharma</span>
               </h1>
               <span className="font-semibold text-4xl sm:text-5xl shadow">
-                Full Stack Developer..
+                MERN Stack Developer..
               </span>
-              <button className="bg-blue-500 rounded border-none w-1/2 py-2 px-1 text-xl font-semibold">
-                JOIN US.
-              </button>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1AANEyH2dc4t0sXachfS5pqJUr74XT3sv"
+                className="bg-blue-500 text-xl sm:text-3xl  sm:px-4 mx-auto sm:mx-0 py-2 w-[200px] rounded-sm shadow-sm border-none"
+              >
+                RESUME
+                <i className="bi ml-2 bi-download"></i>
+              </a>
             </div>
           </div>
+
           <div className="flex items-center justify-center  ">
-            <div className=" border-[3px] bg-gray-200 hidden sm:flex    shadow-sm rounded-[50%] sm:w-[300px] lg:w-[330px] min-h-[60%]  items-center justify-center ">
-              <img src={image} className="h-[300px] " alt="please wait" />
-            </div>
+            <div className="    sm:flex  rounded-[50%] bg-red-300      shadow-sm border-[5px] border-blue-500  items-center justify-center h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] " style={{backgroundImage:`url(${image})`,backgroundPosition:"top",backgroundSize:"cover"}}></div>
           </div>
         </div>
       </section>

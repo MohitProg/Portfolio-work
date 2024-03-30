@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Blogitem = () => {
   return (
-    <div className='bg-gray-200'>
+    <Link to="/singleblog">
+    <div className='bg-gray-200 transition ease-in-out  border-[4px] hover:border-blue-500 rounded p-1 shadow-sm'>
         <div >
-            <img src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyfGVufDB8fDB8fHww" className='object-fit' alt="" />
+            <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbXB1dGVyfGVufDB8fDB8fHww" className='object-fit' alt="" />
         </div>
         <div className='p-2'>
             <h1 className='text-xl font-bold'>Best Phone in this World is Iphone </h1>
@@ -13,6 +15,7 @@ const Blogitem = () => {
             
         </div>
     </div>
+    </Link>
   )
 }
 

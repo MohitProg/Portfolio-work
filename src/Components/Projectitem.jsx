@@ -2,10 +2,10 @@ import React from 'react'
 
 const Projectitem = () => {
   return (
-    <div className=' bg-gray-300 p-1 shadow-sm rounded '>
-        <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover h-[300px] w-full' alt="" />
+    <div className=' bg-gray-300 p-1  shadow-sm rounded transition border-[4px]  ease-in-out hover:border-blue-500'>
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" className='object-cover h-[200px] w-full' alt="" />
       
-        <div className='  flex flex-col gap-2 items-center justify-center '>
+        <div className='  flex flex-col gap-2 items-center justify-center  bg-gray-300 p-2 '>
             <h1 className='text-2xl font-bold '>MERN BLOG APP</h1>
             <button className='bg-blue-500 px-4 font-semibold text-white text-xl rounded border-none  py-1'>Preview</button>
 

@@ -4,11 +4,12 @@ import Blogitem from "../Components/Blogitem";
 const Blogs = () => {
   return (
     <section>
+   
       <div className="grid min-h-[80vh] grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 p-3 ">
         <div className="h-[400px] p-3 flex flex-col  sm:mt-4 gap-3 bg-gray-200 rounded-sm">
           {/*  search category here  */}
           <div className="flex items-center flex-col  gap-2 mt-5 ">
-            <h1 className="text-xl font-semibold">Search Blogs</h1>
+            <h1 className="text-2xl font-semibold">Search Blogs</h1>
             <input
               type="Search"
               className="p-2 ring-1 rounded w-3/4"
@@ -36,6 +37,7 @@ const Blogs = () => {
           </div>
         </div>
       </div>
+   
     </section>
   );
 };
