@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const path = useLocation();
   const paths = path.pathname;
-  console.log(paths)
+  console.log(paths);
 
   return (
     <>
@@ -13,32 +13,40 @@ const Header = () => {
           <h1 className="text-3xl font-bold">
             <span className="text-blue-500">Web</span>tech
           </h1>
-          <div >
+          <div>
             <ul className="flex gap-5 text-lg font-semibold ">
               <Link
                 // className={paths === "/" ? "bg-blue-500 p-1" : "text-black p-1"}
-                className={`flex rounded items-center p-1 justify-center gap-2 ${paths === "/" ? "bg-blue-500":"text-black"}`}
+                className={`flex rounded items-center p-1 justify-center gap-2 ${
+                  paths === "/" ? "bg-blue-500" : "text-black"
+                }`}
                 to="/"
               >
                 <span className="hidden sm:block">Home</span>
                 <i className="bi text-2xl sm:text-xl  bi-house"></i>
               </Link>
               <Link
-              className={`flex rounded items-center p-1 justify-center gap-2 ${paths === "/blogs" ? "bg-blue-500":"text-black"}`}
+                className={`flex rounded items-center p-1 justify-center gap-2 ${
+                  paths === "/blogs" ? "bg-blue-500" : "text-black"
+                }`}
                 to="/blogs"
               >
                 <span className="hidden sm:block">Blogs</span>
                 <i className="bi text-2xl sm:text-xl  bi-book"></i>
               </Link>
               <Link
-             className={`flex  rounded items-center p-1 justify-center gap-2 ${paths === "/service" ? "bg-blue-500":"text-black"}`}
+                className={`flex  rounded items-center p-1 justify-center gap-2 ${
+                  paths === "/service" ? "bg-blue-500" : "text-black"
+                }`}
                 to="/service"
               >
                 <span className="hidden sm:block">Service</span>
                 <i className="bi text-2xl sm:text-xl  bi-person-raised-hand"></i>
               </Link>
               <Link
-             className={`flex rounded items-center p-1 justify-center gap-2 ${paths === "/aboutus" ? "bg-blue-500":"text-black"}`}
+                className={`flex rounded items-center p-1 justify-center gap-2 ${
+                  paths === "/aboutus" ? "bg-blue-500" : "text-black"
+                }`}
                 to="aboutus"
               >
                 <span className="hidden sm:block">About us </span>
@@ -55,8 +63,11 @@ const Header = () => {
               id=""
             />
 
-            <Link to="login" className="bg-blue-500 px-2 py-1 rounded text-xl font-semibold text-white">
-              Login
+            <Link
+              to="/profile"
+              className="bg-blue-500 px-2 py-1 rounded text-xl font-semibold text-white"
+            >
+              <i className="bi bi-person-circle"></i>
             </Link>
           </div>
         </nav>

@@ -7,7 +7,7 @@ const LoginPage = () => {
       <div className="min-h-[100vh] flex items-center justify-center bg-blue-500 p-2">
         <form
           action=""
-          className=" w-full flex flex-col p-6 justify-center gap-3 bg-gray-200 sm:w-[60%] lg:w-[40%] min-h-[400px] rounded-sm shadow-sm"
+          className=" w-full flex flex-col p-2 sm:p-6 justify-center gap-3 bg-gray-200 sm:w-[60%] lg:w-[40%] min-h-[400px] rounded-sm shadow-sm"
         >
           <h1 className="text-3xl text-center font-semibold">
             WebTech Login here

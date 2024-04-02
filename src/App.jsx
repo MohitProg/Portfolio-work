@@ -1,11 +1,4 @@
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
@@ -15,6 +8,11 @@ import Services from "./Pages/Services";
 import SingleBlogPage from "./Pages/SingleBlogPage";
 import LoginPage from "./Pages/LoginPage";
 import Signuppage from "./Pages/Signuppage";
+import Profile from "./Pages/Profile";
+import Addblog from "./Pages/Addblog";
+import Addprojects from "./Pages/Addprojects";
+import Yourblog from "./Pages/Yourblog";
+import Editprofile from "./Pages/Editprofile";
 
 function App() {
   const Layout = (children) => {
@@ -23,20 +21,17 @@ function App() {
         <div>
           <Header />
           <div>
-            <Outlet>
-              {children}
-            </Outlet>
-
+            <Outlet>{children}</Outlet>
           </div>
         </div>
       </>
     );
   };
-
+  
   const route = createBrowserRouter([
     {
       path: "/",
-      element: <Layout/>,
+      element: <Layout />,
       children: [
         {
           path: "/",
@@ -58,7 +53,45 @@ function App() {
         {
           path: "/singleblog",
           element: <SingleBlogPage />,
-        }
+        },
+
+        {
+          path: "/profile",
+          element: <Profile />,
+          children:[{
+            path:"/profile/addblog",
+            element:<Addblog/>
+          },
+        
+          {
+            path:"/profile/addproject",
+            element:<Addprojects/>
+          },
+          {
+            path:"/profile",
+            element:<Yourblog/>
+          },
+          {
+            path:"/profile/editprofile",
+            element:<Editprofile/>
+          }
+        
+        ]
+          
+        },
+        {
+          path: "/addproject",
+          element: <Addprojects />,
+        },
+        {
+          path: "/addblog",
+          element: <Addblog />,
+        },
+
+        {
+          path: "/userblog",
+          element: <Yourblog />,
+        },
       ],
     },
 
@@ -74,20 +107,7 @@ function App() {
 
   return (
     <>
-    <RouterProvider router={route}/>
-      {/* <BrowserRouter>
-    <Header/>
-  
-    <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/blogs' element={<Blogs/>} />
-      <Route path='/service' element={<Services/>} />
-      <Route path='/aboutus' element={<About/>} />
-      <Route path='/singleblog' element={<SingleBlogPage/>} />
-    </Routes>
-    
-    
-    </BrowserRouter> */}
+      <RouterProvider router={route} />
     </>
   );
 }

@@ -1,14 +1,14 @@
 import React from "react";
-import html from "../images/html.png"
-import css from "../images/css.png"
-import javascript from "../images/javascript.png"
-import bootsrap from "../images/bootstrap.png"
-import tailwind from "../images/tailwind.png"
-import react from "../images/react.png"
-import nodejs from "../images/nodejs.png"
-import mongodb from "../images/mongodb.png"
-import cprogramming from "../images/cprogramming.png"
-import wordpress from "../images/wordpress.png"
+import html from "../images/html.png";
+import css from "../images/css.png";
+import javascript from "../images/javascript.png";
+import bootsrap from "../images/bootstrap.png";
+import tailwind from "../images/tailwind.png";
+import react from "../images/react.png";
+import nodejs from "../images/nodejs.png";
+import mongodb from "../images/mongodb.png";
+import cprogramming from "../images/cprogramming.png";
+import wordpress from "../images/wordpress.png";
 const SkillsSet = () => {
   return (
     <section>
@@ -30,7 +30,8 @@ const SkillsSet = () => {
           <div className="min-h-[50px] flex  jsutify-center gap-3 items-center p-1 border-[2px] border-blue-500">
             <img src={bootsrap} className="h-[50px] w-[40px]" alt="" />
             <h1 className="text-xl font-semibold">Bootsrap</h1>
-          </div><div className="min-h-[50px] flex  jsutify-center gap-3 items-center p-1 border-[2px] border-blue-500">
+          </div>
+          <div className="min-h-[50px] flex  jsutify-center gap-3 items-center p-1 border-[2px] border-blue-500">
             <img src={tailwind} className="h-[50px] w-[40px]" alt="" />
             <h1 className="text-xl font-semibold">Tailwind</h1>
           </div>
@@ -54,7 +55,6 @@ const SkillsSet = () => {
             <img src={wordpress} className="h-[50px] w-[40px]" alt="" />
             <h1 className="text-xl font-semibold">Wordpress</h1>
           </div>
-          
         </div>
       </div>
     </section>
