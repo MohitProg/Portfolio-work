@@ -7,8 +7,8 @@ const Profile = (children) => {
   return (
     <>
       <section className=" min-h-[100vh]">
-        <div className="grid grid-cols-4">
-          <div className="min-h-[100vh] ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 ">
+          <div className="lg:min-h-[100vh]  ">
             <div className="h-[200px] w-[200px] mx-auto mt-6 rounded-[50%] overflow-hidden flex items-center justify-center">
               <img
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -28,7 +28,7 @@ const Profile = (children) => {
             <div className="bg-gray-300 min-h-[200px] mt-3 p-2">
               <h1 className="text-center text-2xl  font-semibold">Your Data</h1>
               <ul className="flex flex-col gap-2 text-lg font-semibold mt-2">
-              <Link
+                <Link
                   to="/profile/editprofile"
                   className=" flex gap-2 items-center "
                 >
@@ -65,7 +65,7 @@ const Profile = (children) => {
               </ul>
             </div>
           </div>
-          <div className="min-h-[100vh] col-span-3 ">
+          <div className="min-h-[100vh] sm:col-span-2 lg:col-span-3 ">
             <Outlet />
           </div>
         </div>

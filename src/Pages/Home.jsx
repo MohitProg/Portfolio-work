@@ -14,7 +14,7 @@ const Home = () => {
  <IntroSection/>
  <SkillsSet/>
  <ProjectSection/>
- <Footer/>
+
  {/* <Resume/> */}
  
  

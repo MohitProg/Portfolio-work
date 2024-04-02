@@ -13,6 +13,7 @@ import Addblog from "./Pages/Addblog";
 import Addprojects from "./Pages/Addprojects";
 import Yourblog from "./Pages/Yourblog";
 import Editprofile from "./Pages/Editprofile";
+import Footer from "./Components/Footer";
 
 function App() {
   const Layout = (children) => {
@@ -23,6 +24,7 @@ function App() {
           <div>
             <Outlet>{children}</Outlet>
           </div>
+          <Footer/>
         </div>
       </>
     );
