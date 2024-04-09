@@ -13,14 +13,14 @@ const Addprojects = () => {
 
 
       <label htmlFor="">Project Title</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the title' />
+      <input type="text" className='p-2 ring-1 appearance-none outline-none rounded-sm' placeholder='Enter the title' />
       <label htmlFor="">Project Url</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the url' />
+      <input type="text" className='p-2 ring-1 appearance-none outline-none rounded-sm' placeholder='Enter the url' />
       <label htmlFor="">Project Description</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the deescription' name="" id="" />
+      <input type="text" className='p-2 ring-1 appearance-none  outline-none rounded-sm' placeholder='Enter the deescription' name="" id="" />
       <label htmlFor="">Project Image</label>
-      <input type="file" className='ring-2 p-2 rounded-sm'  placeholder='image ' />
-      <button className='px-2 py-1 bg-blue-500 w-[200px] text-xl text-white font-semibold rounded mt-3'>Add Project</button>
+      <input type="file" className='ring-1 p-2 rounded-sm outline-none'  placeholder='image ' />
+      <button className='px-2 py-2 bg-blue-500 w-1/5 text-xl text-white  rounded-lg mt-3'>Add Project</button>
     </form>
   </div>
 </section>

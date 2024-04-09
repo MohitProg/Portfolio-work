@@ -26,57 +26,63 @@ const Header = () => {
             <ul className="hidden gap-5 text-lg font-semibold lg:flex ">
               <Link
                 // className={paths === "/" ? "bg-blue-500 p-1" : "text-black p-1"}
-                className={`flex rounded items-center p-1 justify-center gap-2 ${
-                  paths === "/" ? "bg-blue-500" : "text-black"
+                className={`flex rounded items-center px-1 py-0 justify-center gap-2 ${
+                  paths === "/" ? "bg-blue-500 text-white" : "text-black"
                 }`}
                 to="/"
               >
                 <span className="hidden sm:block">Home</span>
-                <i className="bi text-2xl sm:text-xl  bi-house"></i>
+                {/* <i className="bi text-xl sm:text-xl  bi-house"></i> */}
               </Link>
               <Link
                 className={`flex rounded items-center p-1 justify-center gap-2 ${
-                  paths === "/blogs" ? "bg-blue-500" : "text-black"
+                  paths === "/blogs" ? "bg-blue-500 text-white" : "text-black"
                 }`}
                 to="/blogs"
               >
                 <span className="hidden sm:block">Blogs</span>
-                <i className="bi text-2xl sm:text-xl  bi-book"></i>
+                {/* <i className="bi text-xl sm:text-xl  bi-book"></i> */}
               </Link>
               <Link
                 className={`flex  rounded items-center p-1 justify-center gap-2 ${
-                  paths === "/service" ? "bg-blue-500" : "text-black"
+                  paths === "/service" ? "bg-blue-500 text-white" : "text-black"
                 }`}
                 to="/service"
               >
                 <span className="hidden sm:block">Service</span>
-                <i className="bi text-2xl sm:text-xl  bi-person-raised-hand"></i>
+                {/* <i className="bi text-xl sm:text-xl  bi-person-raised-hand"></i> */}
               </Link>
               <Link
                 className={`flex rounded items-center p-1 justify-center gap-2 ${
-                  paths === "/aboutus" ? "bg-blue-500" : "text-black"
+                  paths === "/aboutus" ? "bg-blue-500 text-white" : "text-black"
                 }`}
                 to="aboutus"
               >
                 <span className="hidden sm:block">About us </span>
-                <i className="bi  text-2xl sm:text-xl bi-file-earmark-person"></i>
+                {/* <i className="bi  text-xl sm:text-xl bi-file-earmark-person"></i> */}
               </Link>
             </ul>
           </div>
           <div className=" items-center gap-2 hidden lg:flex">
+            <div className="flex gap-2  ring-1 flex-row items-center bg-white  rounded  px-2 py-1">
+            <i class="bi bi-search"></i>
             <input
               type="search"
-              className="appearance-none p-1 rounded ring-1"
+              className="appearance-none p-1 rounded text-sm border-none outline-none"
               placeholder="Search"
               name=""
               id=""
             />
 
+
+
+            </div>
+
             <Link
               to="/profile"
-              className="bg-blue-500 px-2 py-1 rounded text-xl font-semibold text-white"
+              className=" rounded  font-semibold text-white flex items-center justify-center"
             >
-              <i className="bi bi-person-circle"></i>
+              <i className=" text-3xl text-gray-600 bi bi-person-circle"></i>
             </Link>
           </div>
           <div

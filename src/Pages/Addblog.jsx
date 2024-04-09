@@ -12,19 +12,21 @@ const Addblog = () => {
 
 
       <label htmlFor="">Blog Title</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the title' />
+      <input type="text" className='p-2 ring-1 outline-none  appearance-none rounded-sm' placeholder='Enter the title' />
 
       <label htmlFor="">Blog Category</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the caregory' name="" id="" />
+      <input type="text" className='p-2 ring-1  outline-none appearance-none rounded-sm' placeholder='Enter the caregory' name="" id="" />
 
       <label htmlFor="">Blog Summary</label>
-      <input type="text" className='p-2 ring-2 appearance-none rounded-sm' placeholder='Enter the summary' name="" id="" />
+      <input type="text" className='p-2 ring-1 outline-none  appearance-none rounded-sm' placeholder='Enter the summary' name="" id="" />
 
       <label htmlFor="">Blog Image</label>
-      <input type="file" className='ring-2 p-2 rounded-sm'  placeholder='image ' />
+      <input type="file" className='ring-1  p-2 outline-none rounded-sm'  placeholder='image ' />
 
+  
       <Texteditor/>
-      <button className='px-2 py-1 bg-blue-500 w-[200px] text-xl text-white font-semibold rounded mt-3'>Add Blog</button>
+      
+      <button className='px-2 py-2 bg-blue-500 w-[200px]  text-xl text-white font-semibold rounded-lg mt-3'>Add Blog</button>
     </form>
   </div>
 </section>

@@ -11,25 +11,25 @@ const Editprofile = () => {
             <label htmlFor="">Name</label>
             <input
               type="text"
-              className="p-2 ring-2 appearance-none rounded-sm"
+              className="p-2 ring-1  rounded-sm appearance-none outline-none"
               placeholder="Enter the name"
             />
 
             <label htmlFor="">Description</label>
             <input
               type="text"
-              className="p-2 ring-2 appearance-none rounded-sm"
+              className="p-2 ring-1 appearance-none rounded-sm outline-none"
               placeholder="Enter the description"
             />
 
             <label htmlFor="">Profile Image</label>
             <input
               type="file"
-              className="ring-2 p-2 rounded-sm"
+              className="ring-1 p-2 rounded-sm outline-none"
               placeholder="image "
             />
 
-            <button className="px-2 py-1 bg-blue-500 w-[200px] text-xl text-white font-semibold rounded mt-3">
+            <button className="px-2 py-2  bg-blue-500 w-[100px] text-xl text-white  rounded-lg mt-3">
               Update
             </button>
             
